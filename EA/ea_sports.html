@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EA SPORTS</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="easports.png">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="ea_sports.css">
+    <!--keywords-->
+    <meta name="keywords" content="gaming, GAMES, gamers, qwertys gamer, gameforest">
+    <!-- glyphicons -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist\css\glyphicon.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+jQuery(document).ready(function($) {
+
+  var visible = false;
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    if (!visible && scrollTop > 100) {
+      $(".scrollToTop").fadeIn();
+      visible = true;
+    } else if (visible && scrollTop <= 100) {
+      $(".scrollToTop").fadeOut();
+      visible = false;
+    }
+  });
+
+  //Click event to scroll to top
+  $(".scrollToTop").click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+
+});
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- for glyphicon  -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="overlay1">
+            <button class="btn btn-primary">sign up</button>
+            <button class="btn btn-primary">sign in</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div id="mytopNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closetopNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div> -->
+
+    <div id="topmost">
+        <a href="ea.html"><span id="logo"><img src="ea.png" style="height: 25px; width: 30px;padding-bottom: 5px;" id="ealogo"></span></a>
+
+        <div class="topy">
+            <a href=""><span id="help" onclick="openNav()" class="glyphicon glyphicon-question-sign colorchange" ></span></a>
+            <!-- <span style="font-size:30px;cursor:pointer" onclick="opentopNav()">&#x3f;</span> -->
+            <a href=""><span class="tooltip1">Help</span></a>
+        </div>
+
+        <a href=""><span id="usercolor" class="glyphicon glyphicon-user colorchange"></span></a>
+    </div>
+
+<!-- sidebar -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <!-- <div class="sidebar-header"> -->
+            <a href="">ALL GAMES</a>
+        <!-- </div>   -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+            <img src="madden20.jpg" id="side-madden">
+            </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+            <img src="skull.jpg" class="skull">
+                </div>
+                <div class="col-md-6 col-sm-12">
+            <img src="skull.jpg" class="skull">
+                </div>
+                  <div class="col-md-6 col-sm-12">
+            <img src="skull.jpg" class="skull side">
+                </div>
+                <div class="col-md-6 col-sm-12">
+            <img src="skull.jpg" class="skull side">
+                </div>
+            </div>
+        </div>
+
+  </div>
+</div>
+
+<!-- navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#Demo"
+            aria-controls="Demo" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span id="sidebar-login" style="font-size:30px;cursor:pointer; margin-right: 10px;" onclick="openNav()">&#9776;</span>
+
+        <!--logo-->
+        <div class="new">
+            <a class="navbar-brand" href="ea.html"><img
+                    src="https://logos-download.com/wp-content/uploads/2016/11/EA_logo_logotype.png"
+                    id="navbar-logo"></a>
+            <span class="tooltiptext">Electronic Arts Home</span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="Demo">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        GAMES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        ABOUT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Company</a>
+                        <a class="dropdown-item" href="#">News</a>
+                        <a class="dropdown-item" href="#">Studio</a>
+                        <a class="dropdown-item" href="#">Competitive Gaming</a>
+                        <a class="dropdown-item" href="#">Origin</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        RESOURCES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Forums</a>
+                        <a class="dropdown-item" href="#">Careers</a>
+                        <a class="dropdown-item" href="#">Press</a>
+                        <a class="dropdown-item" href="#">Investors</a>
+                    </div>
+                </li>
+                <li class="new">
+                    <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">SUBSCRIBE</a>
+                    <span class="tooltiptext">SUBSCRIBE</span>
+                </li>
+                <li class="new">
+                    <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">STAY AND PLAY</a>
+                    <span class="tooltiptext">STAY AND PLAY</span>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+            <form class="form-inline">
+                <div class="md-form my-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                </div>
+            </form>
+        </div>
+    </nav>
+
+<!-- video -->
+    <div class="vid-bottom">
+        <div class="section">
+            <img src="center.jpg" id="centerphoto">
+            <img src="E-T.png" id="rating">
+            <div class="video-container">
+                <video autoplay="true" muted loop id="vid">
+                    <source src="backvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- <iframe width="560" height="315" src= "https://www.youtube.com/embed/vgQNOIhRsV4" autoplay="1" controls="0" frameborder="0"></iframe> -->
+
+        <div id="latest">
+            <p id="latestText"><strong>LATEST SPORTS GAMES</strong></p>
+        </div>
+
+        <div class="data">
+            <p class="dataText">Play the very best of soccer, football, ice hockey, basketball, and MMA games with
+                Electronic Arts’ sports titles. Dominate the World's Game in <a href=""><span class="redcolor">FIFA 20</span></a>, rise
+                to gridiron greatness in <a href=""><span class="redcolor">Madden NFL 20</span></a>, experience incredible authenticity
+                on the ice in <a href=""><span class="redcolor">NHL 20</span></a>, and more!</p>
+        </div>
+
+<!-- images -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class=" col-lg-4 col-md-6 pad image_top">
+                    <a href=""><img src="fifa2020.jpg" id="fifa" alt="..."></a>
+                    <div class="above">
+                        <img src="https://www.fifplay.com/img/public/fifa-20-logo-white.png" class="logoss">
+                    </div>
+                </div>
+
+                <div class="  col-lg-4 col-md-6 pad image_top"> 
+                    <a href=""><img src="madden20.jpg" id="madden" alt="..."></a>
+                    <div class="above">
+                        <img src="https://www.fifplay.com/img/public/fifa-20-logo-white.png" class="logoss">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pad"><a href=""><img src="nhl20.jpg" id="nhl" alt="..."></a> </div>
+
+                <div class="col-lg-4 col-md-6 pad"><a href=""> <img src="nba.jpg" id="nba" alt="..."></a></div>
+
+                <div class="col-lg-4 col-md-6 pad"><a href=""><img src="ufc.jpg" id="ufc" alt="..."></a></div>
+
+            </div>
+        </div>
+
+        <center>
+            <div class="container pal">
+                <a class=" buttoncolor rounded-0 rounded-sm " href="#" role="button"><strong>ALL SPORTS
+                        GAMES</strong></a>
+                <span class="tooltip1">All Sports Games</span>
+            </div>
+        </center>
+
+        <div id="blacky"></div>
+
+    </div>
+
+
+    <div class="divcolour">
+        <div class="container">
+            <div class="row best align-items-center">
+                <div class="col-lg-8 col-md-12 bestparentdiv">
+                    <div id="textleft" class="col-lg-6 col-md-12 ">
+                        <strong>THE BEST WAY TO PLAY</strong>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-12 parentdiv">
+                    <div class="subscribe">
+                        <a href="" class="buttoncolor rounded-0 rounded-sm" href="#" role="button"><strong>Subscribe
+                                Now</strong></a>
+                        <span class="tooltiptext">Subscribe Now</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="whitepart">
+        <div class="text-center">
+            <p id="mobile"><strong>MOBILE SPORTS GAMES</strong></p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pad"><img src="fifa-mobile-2.png" id="fifa-mobile" class="responsive">
+                </div>
+                <div class="col-lg-4 col-md-6 pad"><img src="nba-mobile.png" id="nba-mobile" class="responsive"></div>
+                <div class="col-lg-4 col-md-6 pad"><img src="nfl-mobile-2.png" id="nfl-mobile" class="responsive"></div>
+            </div>
+        </div>
+
+
+        <div class="text-center">
+            <p id="news"><strong>LATEST NEWS</strong></p>
+        </div>
+    </div>
+
+    <div class="navy">
+        <div class="container">
+            <center>
+                <a href="" class="nav-mid">FIFA</a>
+                <a href="" class="nav-mid">Madden NFL</a>
+                <a href="" class="nav-mid">NHL</a>
+                <a href="" class="nav-mid">NBA LIVE</a>
+                <a href="" class="nav-mid">UFC</a>
+                <a href="" class="nav-mid">FIFA Mobile</a>
+                <a href="" class="nav-mid">Madden NFL Mobile</a>
+                <a href="" id="line" class="nav-mid">NBA LIVE Mobile</a>
+            </center>
+        </div>
+    </div>
+
+    <div class="grey">
+        <div class="container">
+            <div class="row rowmargin">
+                <div class="outdiv col-lg-4 col-md-6 ">
+                    <div class="card ">
+                        <img class="card-img-top"
+                            src="https://mms.businesswire.com/media/20200409005732/en/784225/5/FIFA20_S%26P_Announce_16x9_Web.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="top_head"><span class="red_font"><strong>FIFA 20</span> | APR 9,
+                                    2020</span></strong><br>
+                                <span class="heading">
+                                    FIFA 20 - Stay and Play Cup - EA SPORTS Official Site
+                                </span><br>
+                                <span class="cardy">Learn about the Stay and Play Cup, a FIFA tournament featuring
+                                    professional
+                                    footballers from 20 of Europe's mosr historic clubs in aid of Global Giving's
+                                    Coronavirus Relief Fund.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="outdiv col-lg-4 col-md-6 ">
+                    <div class="card ">
+                        <img class="card-img-top"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-q3yrxqBTWZvuJ94sHeouI3xtHfK8uJwfOjZzIgCOuPgPhnm2&usqp=CAU"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="top_head"><span class="red_font"><strong>FIFA 20</span> | MAR 27,
+                                    2020</span></strong><br>
+                                <span class="heading">
+                                    FIFA 20 Ultimate Team - FUT Birthday - EA SPORTS Official Site
+                                </span><br>
+                                <span class="cardy">See all the new content coming to FUT 20 with FUT Birthday, starting
+                                    March
+                                    27th.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="outdiv col-lg-4 col-md-6 ">
+                    <div class="card ">
+                        <img class="card-img-top"
+                            src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-20/common/pitch-notes/fifa-pitchnotes01b.png.adapt.crop16x9.431p.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="top_head"><span class="red_font"><strong>FIFA 20</span> | MAR 18,
+                                    2020</span></strong><br>
+                                <span class="heading">
+                                    Pitch Notes - FUT Content Update
+                                </span><br>
+                                <span class="cardy">An update on Live Content during the current interruption of
+                                    Football Leagues around
+                                    the world.</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="outdiv col-lg-4 col-md-6 ">
+                    <div class="card ">
+                        <img class="card-img-top"
+                            src="https://cdn-cf.gamivo.com/image_cover.jpg?f=119016&n=33231450648912086.jpg&h=8f425d082de59b54925066254b3f42af"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="top_head"><span class="red_font"><strong>FIFA 20</span> | MAR 13,
+                                    2020</span></strong><br>
+                                <span class="heading">
+                                    Coronavirus - EA Suspends all FIFA 20 Global Series Events
+                                </span><br>
+                                <span class="cardy">EA is suspending all EA SPORTS FIFA 20 Global Series events until
+                                    further notice due
+                                    the continued impact of COVID-19.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="outdiv col-lg-4 col-md-6">
+                    <div class="card ">
+                        <img class="card-img-top"
+                            src="https://images.daznservices.com/di/library/GOAL/f4/4e/fifa-20-black-friday_qfnajtxv4yt714fngzzpbh31u.jpg?t=-1203761330&quality=60&w=1200&h=800"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="top_head"><span class="red_font"><strong>FIFA 20</span> | MAR 6,
+                                    2020</span></strong><br>
+                                <span class="heading">
+                                    Coronavirus - Update on the FIFA 20 Global Series Upcoming Competitive
+                                    Gami...
+                                </span><br>
+                                <span class="cardy">Coronavirus(COVID-19) is impacting communities around the world.
+                                    Updates for the EA
+                                    SPORTS FIFA 20 Global Series competitive gaming upcoming events.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="outdiv col-lg-4 col-md-6">
+                    <div class="card ">
+                        <img class="card-img-top"
+                            src="https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-20/images/2020/02/fut20-hero-medium-keyarthome-7x2-xl.png.adapt.crop16x9.320w.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <span class="top_head"><span class="red_font"><strong>FIFA 20</span> | MAR 6,
+                                    2020</span></strong><br>
+                                <span class="heading">
+                                    FIFA 20 Ultimate Team - Player Days - EA SPORTS Official Site
+                                </span><br>
+                                <span class="cardy">See what'sin store for you during the FUT 20 Player Days.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <center>
+                <span class="text-center all">
+                    <a id="ready" class="rounded-0 rounded-sm" href="#" role="button"><strong>Read
+                            More</strong></a>
+                </span>
+            </center>
+        </div>
+
+        <div id="gray"></div>
+
+    </div>
+
+<!-- red strip -->
+    <div class="divcolour">
+        <div class="container">
+            <div class="row best align-items-center">
+                <div class="col-lg-8 col-md-12 bestparentdiv">
+                    <div id="textleft" class="col-lg-6 col-md-12 ">
+                        <strong>THE BEST WAY TO PLAY</strong>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 parentdiv">
+                    <div class="subscribe">
+                        <a href="" class="buttoncolor rounded-0 rounded-sm" href="#" role="button"><strong>Subscribe
+                                Now</strong></a>
+                        <span class="tooltiptext">Subscribe Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<a href="#" class="scrollToTop" style="display: none; background-color: #20b2aa;padding: 10px;border-radius: 30px;"><span class="glyphicon glyphicon-arrow-up"></span></a>
+ 
+<!--     <div class="grey">
+        <div class="container whole">
+            <div class="row">
+                 <span class="grey-links"><a href="" class="grey-bottom">Executives</a></span>
+                <span class="grey-links"><a href="" class="grey-bottom">Press</a></span>
+                <span class="grey-links"><a href="" class="grey-bottom">Investors</a></span>
+                <span class="grey-links"><a href="" class="grey-bottom">Playtesting</a></span>
+                <span class="grey-links"><a href="" class="grey-bottom">Building Healthy Communities</a></span>
+                 </div>
+                <div id="media-handles" class="">
+                    <center>
+                        <p id="handles"><strong>JOIN THE CONVERSATION</strong></p>
+                    </center>
+                    <center>
+                        <div class="social-media">
+                            <i class="fa fa-linkedin-square colory"></i>
+                            <i class="fa fa-youtube-play colory"></i>
+                            <i class="fa fa-instagram colory"></i>
+                            <i class="fa fa-twitter colory"></i>
+                            <i class="fa fa-facebook colory"></i>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+     -->
+            <!-- footer -->
+            <div class="container footer">      
+              <div class="row align-items-center justify-content-center">
+                           
+                  <div class="linkspad col-lg-auto col-md-12 "> <img src="ea.png" id="last_ea"></div>
+                  <div class="linkspad col-lg-auto col-md-3 col-sm-4"><a href="" class="footer-items">GAME LIBRARY</a></div>
+                  <div class="linkspad col-lg-1 col-md-3  col-sm-4"><a href="" class="footer-items">SUBSCRIBE</a></div>
+                  <div class="linkspad col-lg-1 col-md-3 col-sm-4"><a href="" class="footer-items">ORIGIN</a></div>
+                  <div class="linkspad col-lg-1 col-md-3 col-sm-4"><a href="" class="footer-items">ABOUT</a></div>
+                  <div class="linkspad col-lg-1 col-md-3 col-sm-4"><a href="" class="footer-items">ACSESSIBILITY</a></div>
+                  <div class="linkspad col-lg-1 col-md-3 col-sm-4"><a href="" class="footer-items">HELP</a></div>
+                  <div class="linkspad col-lg-1 col-md-3 col-sm-4">
+                        <center>
+                       <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                      </center>
+                  </div> 
+              </div>
+              <!-- map -->
+              <div class="map">
+                <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305033.73217177164!2d-6.525880758485334!3d53.32399194018991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sin!4v1588612366153!5m2!1sen!2sin" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </center>
+                </div>
+           </div>
+
+        <script type="text/javascript" src="ea_sports.js"></script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "35%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+
+//   function openNav() {
+//   document.getElementById("mytopNav").style.height = "100%";
+// }
+
+// function closeNav() {
+//   document.getElementById("mytopNav").style.height = "0%";
+}
+</script>
+
+</body>
+
+</html>
