@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+	"name": "Shivani Launcher",
+	"description": "Quick launch Media",
+	"version": "1.0.0",
+	"icons": {"128": "ea_128.png"},
+	"browser_action": {
+		"default_icon": "ea_19.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": ["activeTab"]
+}
